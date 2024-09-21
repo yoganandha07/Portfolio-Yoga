@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand{
+    color: #ffbf00;
+    padding-left: 30px;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffbf00;
+}
+
+/* Sticky navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Hero section animation */
+.header h1 {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Button hover effects */
+.btn-primary {
+    background-color: #ffbf00;
+    border-color: #ffbf00;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d1a800;
+}
+
+/* Floating labels for contact form */
+.form-control:focus ~ label, 
+.form-control:not(:placeholder-shown) ~ label {
+    transform: translateY(-25px);
+    font-size: 12px;
+    color: #ffbf00;
+}
